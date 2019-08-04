@@ -1,0 +1,24 @@
+<div class="margin">
+  <div class="card mt-2" *ngFor="let livro of livros | async">
+    <div class="card-body">
+      <h5 class="card-title">Nome: {{ livro.nome }}</h5>
+      <p class="card-text">Autor: {{ livro.autor }}</p>
+      <p class="card-text">Ano: {{ livro.ano }}</p>
+    </div>
+    <div class="card-footer">
+      <a [routerLink]="[ '/livros/editar', livro.key ]">
+        <button type="button" class="btn btn-outline-primary">
+          Editar
+        </button>
+      </a>
+      <button
+        type="button"
+        class="btn btn-outline-danger ml-2"
+        (click)="delete(livro.key)"
+      >
+        Excluir
+      </button>
+    </div>
+  </div>
+</div>
+<app-alerts></app-alerts>

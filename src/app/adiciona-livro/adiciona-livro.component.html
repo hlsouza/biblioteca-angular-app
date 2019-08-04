@@ -1,0 +1,43 @@
+<app-alerts></app-alerts>
+<div class="margin">
+  <div class="card mt-2">
+    <div class="card-body">
+      <label>Nome do livro*</label>
+      <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="livro.nome"
+        name="nome"
+      />
+
+      <label>Autor*</label>
+      <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="livro.autor"
+        name="autor"
+      />
+
+      <label>Ano*</label>
+      <input
+        type="number"
+        class="form-control"
+        [(ngModel)]="livro.ano"
+        name="ano"
+      />
+
+      <p class="alerta">* Campos obrigatórios</p>
+    </div>
+
+    <div class="card-footer">
+      <!-- <button type="submit" class="btn btn-outline-primary">Salvar</button> -->
+      <button
+        class="btn btn-outline-primary"
+        (click)="adicionar(livro)"
+        type="submit"
+      >
+        Salvar
+      </button>
+    </div>
+  </div>
+</div>
