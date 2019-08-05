@@ -1,6 +1,6 @@
-# Projeto Angular
+# Projeto Biblioteca Online
 
-Projeto CRUD Biblioteca que simula listagem, cadastro e edição de livros (nome, autor e ano).
+Projeto em Angular de um CRUD de Biblioteca que simula listagem, cadastro e edição de livros (nome, autor e ano).
 
 ## Features adicionais
 
