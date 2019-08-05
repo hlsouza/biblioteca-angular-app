@@ -11,3 +11,8 @@ Coloquei um componente gráfico que avisa (no canto direito superior da tela) se
 ## Executando a aplicação
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Autor
+
+Heverton Luiz Dantas Souza
+
