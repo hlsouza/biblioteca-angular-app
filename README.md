@@ -1,6 +1,6 @@
 # Projeto Biblioteca Online
 
-Projeto em Angular de um CRUD de Biblioteca que simula listagem, cadastro e edição de livros (nome, autor e ano).
+Projeto em angular de um CRUD de Biblioteca que simula listagem, cadastro e edição de livros (nome, autor e ano) e acesso ao Firebase Database Realtime.
 
 ## Features adicionais
 
