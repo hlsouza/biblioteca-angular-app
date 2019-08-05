@@ -26,10 +26,8 @@ export class AdicionaLivroComponent implements OnInit {
     this.livro = new Livro();
     this.route.paramMap.subscribe(param => {
       this.livro$ = this._livroService.get(param.get("key"));
-      //console.log(`KEY RECEBIDA: ${param.get("key")}`);
       if(this.livro$ == null) return;
       this.livro$.subscribe(valor => {
-        //console.log(`SUBSCRIBED: ${JSON.stringify(valor)}`);
         this.livro = valor;
         this.livro.key = param.get("key");
       }
@@ -54,7 +52,6 @@ export class AdicionaLivroComponent implements OnInit {
   adicionar(livro: Livro) {
    
     if (livro.key != null && this.dadosValidos()) {
-      //console.log(`UDPATING`)
       this._livroService.update(livro, this.livro.key);
       //this._alerts.setMessage("Livro editado!", "success");
       this.router.navigateByUrl("/livros/listar");
